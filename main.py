@@ -5,6 +5,7 @@ made by Seolmango
 """
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 # tools
 def int_to_n(n : int, x : int) -> list:
@@ -41,6 +42,7 @@ class tester_main():
         self.run_count = 0
         self.run_cache = []
         self.last_error = 0
+        self.now = os.getcwd()
         return None
     
     def run(self):
@@ -105,7 +107,7 @@ class tester_main():
 
 
 if(__name__ == "__main__"):
-    test = tester_main(60,10000)
+    test = tester_main(45,10000)
     test.run()
     test.make_result()
         
