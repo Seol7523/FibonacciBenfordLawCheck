@@ -92,9 +92,13 @@ class tester_main():
         result_data_x = []
         result_data_y = []
         for i in self.dataset.keys():
-            result_data_x.append(i)
+            if(i % (round(self.base/10)) == 0):
+                result_data_x.append(i)
+            else:
+                result_data_x.append('')
             result_data_y.append((self.dataset[i]/total)*100)
         x = np.arange(self.base-1)
+        plt.clf()
         
         plt.bar(x, result_data_y, align='center')
         plt.xticks(x, result_data_x)
@@ -102,13 +106,16 @@ class tester_main():
         plt.suptitle('Benford\'s law test result',size='xx-large')
         plt.title(f'base : {self.base} test_limit : {self.limit}')
         
-        plt.show()
+        plt.savefig(f'{self.now}\\results\\result(Base{self.base}_{self.limit}).png')
         return 0
 
 
 if(__name__ == "__main__"):
-    test = tester_main(45,10000)
-    test.run()
-    test.make_result()
+    for i in range(1,21):
+        print("start test : ", i)
+        test = tester_main(i*10,10000)
+        test.run()
+        test.make_result()
+    print("end")
         
         
