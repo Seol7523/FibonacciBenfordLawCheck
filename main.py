@@ -111,11 +111,9 @@ class tester_main():
 
 
 if(__name__ == "__main__"):
-    for i in range(1,21):
-        print("start test : ", i)
-        test = tester_main(i*10,10000)
-        test.run()
-        test.make_result()
+    test = tester_main(8,10000)
+    test.run()
+    test.make_result()
     print("end")
         
         
