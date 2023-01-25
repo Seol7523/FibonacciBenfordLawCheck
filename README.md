@@ -17,10 +17,10 @@ n 진법에서 피보나치 수열의 벤포드 규칙의 성립 여부를 확�
 
 ## 결과
 
->![8진법](https://github.com/Seol7523/FibonacciBenfordLawCheck/blob/master/results/result(Base8_10000).png)
+>![8진법](https://github.com/Seol7523/FibonacciBenfordLawCheck/blob/main/results/result(Base8_10000).png)
 > 8진법에서의 그래프
 
-> ![20진법](https://github.com/Seol7523/FibonacciBenfordLawCheck/blob/master/results/result(Base20_10000).png)
+> ![20진법](https://github.com/Seol7523/FibonacciBenfordLawCheck/blob/main/results/result(Base20_10000).png)
 > 20진법에서의 그래프
 
 성립한다는 것을 알 수 있다.
@@ -29,15 +29,15 @@ n 진법에서 피보나치 수열의 벤포드 규칙의 성립 여부를 확�
 
 벤포드 법칙이 성립하는 경우 n진법에서 d의 확률은 아래의 수식과 같다.
 
-> ![수식](https://github.com/Seol7523/FibonacciBenfordLawCheck/blob/master/results/answer.gif)
+> ![수식](https://github.com/Seol7523/FibonacciBenfordLawCheck/blob/main/results/answer.gif)
 > 수식
 
 위의 예시에서 8진법에서 1의 확률은 
 
-![수식에 대입하면](https://github.com/Seol7523/FibonacciBenfordLawCheck/blob/master/results/base8.gif)
+![수식에 대입하면](https://github.com/Seol7523/FibonacciBenfordLawCheck/blob/main/results/base8.gif)
 
 위의 예시에서 20진법의 1의 확률은
 
-![수식에 대입하면](https://github.com/Seol7523/FibonacciBenfordLawCheck/blob/master/results/base20.gif)
+![수식에 대입하면](https://github.com/Seol7523/FibonacciBenfordLawCheck/blob/main/results/base20.gif)
 
 잘 일치함을 볼 수 있다.
